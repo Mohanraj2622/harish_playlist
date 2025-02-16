@@ -1276,36 +1276,29 @@ const renderSongList = (songs) => {
     img.alt = song.title;
     img.classList.add('track-cover'); // Add CSS class for styling
     
-    // Check if cover is already stored in localStorage
-    const storedCover = localStorage.getItem(`cover_${song.url}`);
-    if (storedCover) {
-      img.src = storedCover;
-    } else {
-      // Try to extract cover image from MP3 metadata
-      fetch(song.url)
-        .then(response => response.blob())
-        .then(blob => {
-          jsmediatags.read(blob, {
-            onSuccess: function (tag) {
-              const picture = tag.tags.picture;
-              if (picture) {
-                let base64String = "";
-                for (let i = 0; i < picture.data.length; i++) {
-                  base64String += String.fromCharCode(picture.data[i]);
-                }
-                const base64 = btoa(base64String);
-                const coverSrc = `data:${picture.format};base64,${base64}`;
-                img.src = coverSrc;
-                localStorage.setItem(`cover_${song.url}`, coverSrc); // Store in localStorage
-              }
-            },
-            onError: function (error) {
-              console.error("Error reading cover art:", error);
-            }
-          });
-        })
-        .catch(error => console.error("Error fetching MP3 file:", error));
-    }
+// Try to extract cover image from MP3 metadata
+fetch(song.url)
+  .then(response => response.blob())
+  .then(blob => {
+    jsmediatags.read(blob, {
+      onSuccess: function (tag) {
+        const picture = tag.tags.picture;
+        if (picture) {
+          let base64String = "";
+          for (let i = 0; i < picture.data.length; i++) {
+            base64String += String.fromCharCode(picture.data[i]);
+          }
+          const base64 = btoa(base64String);
+          img.src = `data:${picture.format};base64,${base64}`;
+        }
+      },
+      onError: function (error) {
+        console.error("Error reading cover art:", error);
+      }
+    });
+  })
+  .catch(error => console.error("Error fetching MP3 file:", error));
+
     
     // Create a div for track info
     const trackInfo = document.createElement('div');
