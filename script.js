@@ -54,38 +54,38 @@ const SONGS = [
   // 1 list
   {
     title: "A-Love_Blossoms",
-    artist: "Harrish",
+    artist: "Harris",
     url: "A-Love-Blossoms-Instrumental.mp3",
     coverUrl: "https://example.com/cover1.jpg",
   },
   {
     title: "A-Square-B-Square",
-    artist: "Harrish",
+    artist: "Harris",
     url: "A-Square-B-Square-(Female-Version)-MassTamilan.org.mp3",
     coverUrl: "https://example.com/cover1.jpg",
   },
   {
     title: "Aagaaya-Neelangalil",
-    artist: "Harrish",
+    artist: "Harris",
     url: "Aagaaya-Neelangalil-MassTamilan.fm.mp3",
     coverUrl: "https://example.com/cover1.jpg",
   },
   {
     title: "Aagaya-Suriya",
-    artist: "Harrish",
+    artist: "Harris",
     url: "Aagaya-Suriyanai.mp3",
     coverUrl: "https://example.com/cover1.jpg",
   },
   {
     title: "Aakaasam Nee Haddhu",
-    artist: "Harrish",
+    artist: "Harris",
     url: "Aakaasam Nee Haddhu Ra.mp3",
     coverUrl: "https://example.com/cover1.jpg",
   },
 
   {
     title: "Aaradi-Kathe",
-    artist: "Harrish",
+    artist: "Harris",
     url: "Aaradi-Kathe-MassTamilan.com.mp3",
     coverUrl: "https://example.com/cover1.jpg",
   },
@@ -93,25 +93,25 @@ const SONGS = [
   // 3 list
   {
     title: "Adhaaru-Adhaaru",
-    artist: "Harrish",
+    artist: "Harris",
     url: "Adhaaru-Adhaaru.mp3",
     coverUrl: "https://example.com/cover1.jpg",
   },
   {
     title: "Adiyae-Kolluthey",
-    artist: "Harrish",
+    artist: "Harris",
     url: "Adiyae-Kolluthey-MassTamilan.com.mp3",
     coverUrl: "https://example.com/cover1.jpg",
   },
   {
     title: "Akkam-Pakkam",
-    artist: "Harrish",
+    artist: "Harris",
     url: "Akkam-Pakkam.mp3",
     coverUrl: "https://example.com/cover1.jpg",
   },
   {
     title: "Alaikaa-Laikaa",
-    artist: "Harrish",
+    artist: "Harris",
     url: "Alaikaa-Laikaa-MassTamilan.fm.mp3",
     coverUrl: "https://example.com/cover1.jpg",
   },
@@ -119,992 +119,986 @@ const SONGS = [
   // 4 list
   {
     title: "Alaipayauthey-Kanna",
-    artist: "Harrish",
+    artist: "Harris",
     url: "Alaipayuthey-Kanna.mp3",
     coverUrl: "https://example.com/cover1.jpg",
   },
   {
     title: "Amara",
-    artist: "Harrish",
+    artist: "Harris",
     url: "Amara.mp3",
     coverUrl: "https://example.com/cover1.jpg",
   },
   {
     title: "Anbe-Anbe",
-    artist: "Harrish",
+    artist: "Harris",
     url: "Anbe-Anbe.mp3",
     coverUrl: "https://example.com/cover1.jpg",
   },
   {
     title: "Anbe-En-Anbe",
-    artist: "Harrish",
+    artist: "Harris",
     url: "Anbe-En-Anbe-MassTamilan.fm.mp3",
     coverUrl: "https://example.com/cover1.jpg",
   },
   {
     title: "Andangkaka",
-    artist: "Harrish",
+    artist: "Harris",
     url: "Andangkaka.mp3",
     coverUrl: "https://example.com/cover1.jpg",
   },
   {
     title: "Annul-Maelae",
-    artist: "Harrish",
+    artist: "Harris",
     url: "Annul-Maelae-MassTamilan.com.mp3",
     coverUrl: "https://example.com/cover1.jpg",
   },
   //5 list
   {
     title: "Antartica",
-    artist: "Harrish",
+    artist: "Harris",
     url: "Antartica-MassTamilan.fm.mp3",
     coverUrl: "https://example.com/cover1.jpg",
   },
   {
     title: "Appappa",
-    artist: "Harrish",
+    artist: "Harris",
     url: "Appappa.mp3",
     coverUrl: "https://example.com/cover1.jpg",
   },
   {
     title: "Asku-Laska",
-    artist: "Harrish",
+    artist: "Harris",
     url: "Asku-Laska-MassTamilan.fm.mp3",
     coverUrl: "https://example.com/cover1.jpg",
   },
   {
     title: "Ava-Enna-Enna",
-    artist: "Harrish",
+    artist: "Harris",
     url: "Ava-Enna-Enna-MassTamilan.com.mp3",
     coverUrl: "https://example.com/cover1.jpg",
   },
   {
     title: "Avalum-Naanum",
-    artist: "Harrish",
+    artist: "Harris",
     url: "Avalum-Naanum.mp3",
     coverUrl: "https://example.com/cover1.jpg",
   },
   // 6 list
   {
     title: "Ayyayo-Nenju",
-    artist: "Harrish",
+    artist: "Harris",
     url: "Ayyayo-Nenju.mp3",
     coverUrl: "https://example.com/cover1.jpg",
   },
   {
     title: "Azhagiya-Theeye",
-    artist: "Harrish",
+    artist: "Harris",
     url: "Azhagiya-Theeye.mp3",
     coverUrl: "https://example.com/cover1.jpg",
   },
   {
     title: "Bathing-At-Cannes",
-    artist: "Harrish",
+    artist: "Harris",
     url: "Bathing-At-Cannes.mp3",
     coverUrl: "https://example.com/cover1.jpg",
   },
   {
     title: "Kaadhal-Yaanai",
-    artist: "Harrish",
+    artist: "Harris",
     url: "Kaadhal-Yaanai.mp3",
     coverUrl: "https://example.com/cover1.jpg",
   },
   {
     title: "Kaala-Kaala",
-    artist: "Harrish",
+    artist: "Harris",
     url: "Kaala-Kaala.mp3",
     coverUrl: "https://example.com/cover1.jpg",
   },
   {
     title: "Kaatuka Kanule",
-    artist: "Harrish",
+    artist: "Harris",
     url: "Kaatuka Kanule.mp3",
     coverUrl: "https://example.com/cover1.jpg",
   },
   {
     title: "Chikku-Bukku",
-    artist: "Harrish",
+    artist: "Harris",
     url: "Chikku-Bukku-Chikku-MassTamilan.com.mp3",
     coverUrl: "https://example.com/cover1.jpg",
   },
   {
     title: "Chillanjiukkiye",
-    artist: "Harrish",
+    artist: "Harris",
     url: "Chillanjirukkiye.mp3",
     coverUrl: "https://example.com/cover1.jpg",
   },
   {
     title: "Damakku-Damakku",
-    artist: "Harrish",
+    artist: "Harris",
     url: "Damakku-Damakku-MassTamilan.dev.mp3",
     coverUrl: "https://example.com/cover1.jpg",
   },
   // 2 list
   {
     title: "Aararo",
-    artist: "Harrish",
+    artist: "Harris",
     url: "Aararo.mp3",
     coverUrl: "https://example.com/cover1.jpg",
   },
   {
     title: "Aarumuga-Saamy",
-    artist: "Harrish",
+    artist: "Harris",
     url: "Aarumuga-Saamy.mp3",
     coverUrl: "https://example.com/cover1.jpg",
   },
   {
     title: "Aasa Orave",
-    artist: "Harrish",
+    artist: "Harris",
     url: "Aasa Orave.mp3",
     coverUrl: "https://example.com/cover1.jpg",
   },
   {
     title: "Aathagara-Orathil",
-    artist: "Harrish",
+    artist: "Harris",
     url: "Aathangara-Orathil.mp3",
     coverUrl: "https://example.com/cover1.jpg",
   },
   {
     title: "Dama Goli",
-    artist: "Harrish",
+    artist: "Harris",
     url: "Damma Goli.mp3",
     coverUrl: "https://example.com/cover1.jpg",
   },
   {
     title: "Dhimu Dhimu",
-    artist: "Harrish",
+    artist: "Harris",
     url: "Dhimu-Dhimu.mp3",
     coverUrl: "https://example.com/cover1.jpg",
   },
   {
     title: "Dhinam Dhinamum",
-    artist: "Harrish",
+    artist: "Harris",
     url: "Dhinam Dhinamum.mp3",
     coverUrl: "https://example.com/cover1.jpg",
   },
   {
     title: "Ellu Vaya Pookalaye",
-    artist: "Harrish",
+    artist: "Harris",
     url: "Ellu-Vaya-Pookalaye-MassTamilan.org.mp3",
     coverUrl: "https://example.com/cover1.jpg",
   },
   {
     title: "En-Anbe",
-    artist: "Harrish",
+    artist: "Harris",
     url: "En-Anbe-MassTamilan.com.mp3",
     coverUrl: "https://example.com/cover1.jpg",
   },
   {
     title: "En Friends-pola",
-    artist: "Harrish",
+    artist: "Harris",
     url: "En-Frienda-Pola-MassTamilan.fm.mp3",
     coverUrl: "https://example.com/cover1.jpg",
   },
 
   {
     title: "Engeyum-Kaadhal",
-    artist: "Harrish",
+    artist: "Harris",
     url: "Engeyum-Kaadhal.mp3",
     coverUrl: "https://example.com/cover1.jpg",
   },
   {
     title: "Eppo-Nee",
-    artist: "Harrish",
+    artist: "Harris",
     url: "Eppo-Nee.mp3",
     coverUrl: "https://example.com/cover1.jpg",
   },
   {
     title: "Fear",
-    artist: "Harrish",
+    artist: "Harris",
     url: "Fear Song.mp3",
     coverUrl: "https://example.com/cover1.jpg",
   },
   {
     title: "Google-Google",
-    artist: "Harrish",
+    artist: "Harris",
     url: "Google-Google-MassTamilan.fm.mp3",
     coverUrl: "https://example.com/cover1.jpg",
   },
   {
     title: "Gutkha Lakkadi",
-    artist: "Harrish",
+    artist: "Harris",
     url: "Gutkha-Lakkadi.mp3",
     coverUrl: "https://example.com/cover1.jpg",
   },
   {
     title: "Hasili-Fisilye",
-    artist: "Harrish",
+    artist: "Harris",
     url: "Hasili-Fisiliye-MassTamilan.dev.mp3",
     coverUrl: "https://example.com/cover1.jpg",
   },
   {
     title: "Heartiley-Battery",
-    artist: "Harrish",
+    artist: "Harris",
     url: "Heartiley-Battery-MassTamilan.fm.mp3",
     coverUrl: "https://example.com/cover1.jpg",
   },
   {
     title: "Hey Minnale",
-    artist: "Harrish",
+    artist: "Harris",
     url: "Hey Minnale.mp3",
     coverUrl: "https://example.com/cover1.jpg",
   },
   {
     title: "His Name is John",
-    artist: "Harrish",
+    artist: "Harris",
     url: "His Name is John.mp3",
     coverUrl: "https://example.com/cover1.jpg",
   },
   {
     title: "horu Gali",
-    artist: "Harrish",
+    artist: "Harris",
     url: "Horu Gali.mp3",
     coverUrl: "https://example.com/cover1.jpg",
   },
   {
     title: "En-Vannilave",
-    artist: "Harrish",
+    artist: "Harris",
     url: "En-Vennilave.mp3",
     coverUrl: "https://example.com/cover1.jpg",
   },
   {
     title: "Enakku-Thaan",
-    artist: "Harrish",
+    artist: "Harris",
     url: "Enakku-Thaan-MassTamilan.org.mp3",
     coverUrl: "https://example.com/cover1.jpg",
   },
   {
     title: "Endhira Logathu",
-    artist: "Harrish",
+    artist: "Harris",
     url: "Endhira-Logathu-Sundhariye-MassTamilan.com.mp3",
     coverUrl: "https://example.com/cover1.jpg",
   },
   {
     title: "Hunter Vantaar",
-    artist: "Harrish",
+    artist: "Harris",
     url: "Hunter Vantaar.mp3",
     coverUrl: "https://example.com/cover1.jpg",
   },
   {
     title: "Idhu-Naal",
-    artist: "Harrish",
+    artist: "Harris",
     url: "Idhu-Naal.mp3",
     coverUrl: "https://example.com/cover1.jpg",
   },
   {
     title: "Idhuthaanaa",
-    artist: "Harrish",
+    artist: "Harris",
     url: "Idhuthaanaa.mp3",
     coverUrl: "https://example.com/cover1.jpg",
   },
   {
     title: "InnumEnna-Thozha",
-    artist: "Harrish",
+    artist: "Harris",
     url: "Innum-Enna-Thozha.mp3",
     coverUrl: "https://example.com/cover1.jpg",
   },
   {
     title: "iru-Vizhi",
-    artist: "Harrish",
+    artist: "Harris",
     url: "Iru-Vizhi.mp3",
     coverUrl: "https://example.com/cover1.jpg",
   },
   {
     title: "Irukkana-Idupu-Irukkana",
-    artist: "Harrish",
+    artist: "Harris",
     url: "Irukkana-Idupu-Irukkana-MassTamilan.fm.mp3",
     coverUrl: "https://example.com/cover1.jpg",
   },
   {
     title: "Iyengaaru-Veetu-Azhage",
-    artist: "Harrish",
+    artist: "Harris",
     url: "Iyengaaru-Veetu-Azhage.mp3",
     coverUrl: "https://example.com/cover1.jpg",
   },
 
   {
     title: "June-Pona",
-    artist: "Harrish",
+    artist: "Harris",
     url: "June-Pona.mp3",
     coverUrl: "https://example.com/cover1.jpg",
   },
   {
     title: "Kaadhal-kanmani",
-    artist: "Harrish",
+    artist: "Harris",
     url: "Kaadhal-Kanmani-MassTamilan.fm.mp3",
     coverUrl: "https://example.com/cover1.jpg",
   },
 
   {
     title: "kalyaanam-Thaan-Kattikittu",
-    artist: "Harrish",
+    artist: "Harris",
     url: "Kalyaanam-Thaan-Kattikittu.mp3",
     coverUrl: "https://example.com/cover1.jpg",
   },
   {
     title: "Kambikara-Vetti",
-    artist: "Harrish",
+    artist: "Harris",
     url: "Kambikara-Vetti.mp3",
     coverUrl: "https://example.com/cover1.jpg",
   },
   {
     title: "Kanave",
-    artist: "Harrish",
+    artist: "Harris",
     url: "Kanave.mp3",
     coverUrl: "https://example.com/cover1.jpg",
   },
   {
     title: "Kanavellam",
-    artist: "Harrish",
+    artist: "Harris",
     url: "Kanavellam.mp3",
     coverUrl: "https://example.com/cover1.jpg",
   },
   {
     title: "Kannadi-Nilave",
-    artist: "Harrish",
+    artist: "Harris",
     url: "Kannadi-Nilave-MassTamilan.dev.mp3",
     coverUrl: "https://example.com/cover1.jpg",
   },
   {
     title: "kannazhagu-Rathiname",
-    artist: "Harrish",
+    artist: "Harris",
     url: "Kannazhagu-Rathiname-MassTamilan.org.mp3",
     coverUrl: "https://example.com/cover1.jpg",
   },
   {
     title: "Kanneer-Thuliye",
-    artist: "Harrish",
+    artist: "Harris",
     url: "Kanneer-Thuliye.mp3",
     coverUrl: "https://example.com/cover1.jpg",
   },
   {
     title: "Kannum-Kannum-Nokia",
-    artist: "Harrish",
+    artist: "Harris",
     url: "Kannum-Kannum-Nokia.mp3",
     coverUrl: "https://example.com/cover1.jpg",
   },
   {
     title: "Kannum-Kannum_Plus",
-    artist: "Harrish",
+    artist: "Harris",
     url: "Kannum-Kannum-Plus-MassTamilan.org.mp3",
     coverUrl: "https://example.com/cover1.jpg",
   },
   {
     title: "Karu-Karu",
-    artist: "Harrish",
+    artist: "Harris",
     url: "Karu-Karu-MassTamilan.dev.mp3",
     coverUrl: "https://example.com/cover1.jpg",
   },
   {
     title: "Karuppu-Nerathazhagi",
-    artist: "Harrish",
+    artist: "Harris",
     url: "Karuppu-Nerathazhagi.mp3",
     coverUrl: "https://example.com/cover1.jpg",
   },
   {
     title: "Kathari-Poovazhagi",
-    artist: "Harrish",
+    artist: "Harris",
     url: "Kathari-Poovazhagi-MassTamilan.org.mp3",
     coverUrl: "https://example.com/cover1.jpg",
   },
   {
     title: "Kavan",
-    artist: "Harrish",
+    artist: "Harris",
     url: "Kavan-MassTamilan.fm.mp3",
     coverUrl: "https://example.com/cover1.jpg",
   },
   {
     title: "Kummiyadi-Penne",
-    artist: "Harrish",
+    artist: "Harris",
     url: "Kummiyadi-Penne-MassTamilan.com.mp3",
     coverUrl: "https://example.com/cover1.jpg",
   },
   {
     title: "Kutti-pisase",
-    artist: "Harrish",
+    artist: "Harris",
     url: "Kutti-Pisase.mp3",
     coverUrl: "https://example.com/cover1.jpg",
   },
   {
     title: "Kutti-Puli-Kootam",
-    artist: "Harrish",
+    artist: "Harris",
     url: "Kutti-Puli-Kootam-MassTamilan.fm.mp3",
     coverUrl: "https://example.com/cover1.jpg",
   },
   {
     title: "Life-Of-Bachelor",
-    artist: "Harrish",
+    artist: "Harris",
     url: "Life-Of-Bachelor-MassTamilan.fm.mp3",
     coverUrl: "https://example.com/cover1.jpg",
   },
   {
     title: "Lolita",
-    artist: "Harrish",
+    artist: "Harris",
     url: "Lolita.mp3",
     coverUrl: "https://example.com/cover1.jpg",
   },
   {
     title: "Lubber Pandhu",
-    artist: "Harrish",
+    artist: "Harris",
     url: "Lubber Pandhu Theme.mp3",
     coverUrl: "https://example.com/cover1.jpg",
   },
   {
     title: "Maddy-Maddy",
-    artist: "Harrish",
+    artist: "Harris",
     url: "Maddy-Maddy.mp3",
     coverUrl: "https://example.com/cover1.jpg",
   },
 
   {
     title: "Maja-Wedding",
-    artist: "Harrish",
+    artist: "Harris",
     url: "Maja-Wedding-MassTamilan.dev.mp3",
     coverUrl: "https://example.com/cover1.jpg",
   },
   {
     title: "Makkamishi",
-    artist: "Harrish",
+    artist: "Harris",
     url: "Makkamishi.mp3",
     coverUrl: "https://example.com/cover1.jpg",
   },
   {
     title: "Manasilaayo",
-    artist: "Harrish",
+    artist: "Harris",
     url: "Manasilaayo.mp3",
     coverUrl: "https://example.com/cover1.jpg",
   },
   {
     title: "Manjal-Veiyil",
-    artist: "Harrish",
+    artist: "Harris",
     url: "Manjal-Veiyil.mp3",
     coverUrl: "https://example.com/cover1.jpg",
   },
   {
     title: "Mazhai Mazhai",
-    artist: "Harrish",
+    artist: "Harris",
     url: "Mazhai Mazhai.mp3",
     coverUrl: "https://example.com/cover1.jpg",
   },
   {
     title: "Mella-Velanjadhu",
-    artist: "Harrish",
+    artist: "Harris",
     url: "Mella-Valanjadhu.mp3",
     coverUrl: "https://example.com/cover1.jpg",
   },
   // continue for title
   {
     title: "Miss-You-Baby",
-    artist: "Harrish",
+    artist: "Harris",
     url: "Miss-You-Baby-MassTamilan.fm.mp3",
     coverUrl: "https://example.com/cover1.jpg",
   },
   {
     title: "Moongil-Kaadugale",
-    artist: "Harrish",
+    artist: "Harris",
     url: "Moongil-Kaadugale.mp3",
     coverUrl: "https://example.com/cover1.jpg",
   },
   {
     title: "Mun-Andhi",
-    artist: "Harrish",
+    artist: "Harris",
     url: "Mun-Andhi.mp3",
     coverUrl: "https://example.com/cover1.jpg",
   },
   {
     title: "Mundhinam-Parhene",
-    artist: "Harrish",
+    artist: "Harris",
     url: "Mundhinam-Parthene-MassTamilan.com.mp3",
     coverUrl: "https://example.com/cover1.jpg",
   },
   {
     title: "my-Dear-Loveru",
-    artist: "Harrish",
+    artist: "Harris",
     url: "My-Dear-Loveru-MassTamilan.com.mp3",
     coverUrl: "https://example.com/cover1.jpg",
   },
   {
     title: "My-Dear-Pondatti",
-    artist: "Harrish",
+    artist: "Harris",
     url: "My-Dear-Pondatti-MassTamilan.dev.mp3",
     coverUrl: "https://example.com/cover1.jpg",
   },
   {
     title: "Nalla-Nanban",
-    artist: "Harrish",
+    artist: "Harris",
     url: "Nalla-Nanban-MassTamilan.fm.mp3",
     coverUrl: "https://example.com/cover1.jpg",
   },
   {
     title: "Naggai",
-    artist: "Harrish",
+    artist: "Harris",
     url: "Nangaai.mp3",
     coverUrl: "https://example.com/cover1.jpg",
   },
   {
     title: "Nenjai-Poopol",
-    artist: "Harrish",
+    artist: "Harris",
     url: "Nenjai-Poopol.mp3",
     coverUrl: "https://example.com/cover1.jpg",
   },
   {
     title: "Nenjellam-Nindrayee",
-    artist: "Harrish",
+    artist: "Harris",
     url: "Nenjellam-Nindrayae-MassTamilan.org.mp3",
     coverUrl: "https://example.com/cover1.jpg",
   },
   {
     title: "Nenjil-Nenjil",
-    artist: "Harrish",
+    artist: "Harris",
     url: "Nenjil-Nenjil.mp3",
     coverUrl: "https://example.com/cover1.jpg",
   },
   {
     title: "Nenjodu-Nee-(Female)",
-    artist: "Harrish",
+    artist: "Harris",
     url: "Nenjodu-Nee-(Female)-MassTamilan.dev.mp3",
     coverUrl: "https://example.com/cover1.jpg",
   },
   {
     title: "Nerupae",
-    artist: "Harrish",
+    artist: "Harris",
     url: "Nerupae.mp3",
     coverUrl: "https://example.com/cover1.jpg",
   },
   {
     title: "Noorandhu-Kathale",
-    artist: "Harrish",
+    artist: "Harris",
     url: "Noorandu-Kathale-MassTamilan.com.mp3",
     coverUrl: "https://example.com/cover1.jpg",
   },
   {
     title: "Oh Maname",
-    artist: "Harrish",
+    artist: "Harris",
     url: "Oh Maname.mp3",
     coverUrl: "https://example.com/cover1.jpg",
   },
   {
     title: "oh-Balu",
-    artist: "Harrish",
+    artist: "Harris",
     url: "Oh-Balu-MassTamilan.org.mp3",
     coverUrl: "https://example.com/cover1.jpg",
   },
   {
     title: "Oh-Mama-Mama",
-    artist: "Harrish",
+    artist: "Harris",
     url: "Oh-Mama-Mama.mp33",
     coverUrl: "https://example.com/cover1.jpg",
   },
   {
     title: "Oh-Ringa-Ringa",
-    artist: "Harrish",
+    artist: "Harris",
     url: "Oh-Ringa-Ringa.mp3",
     coverUrl: "https://example.com/cover1.jpg",
   },
   {
     title: "Oh-Shanthi-shanthi",
-    artist: "Harrish",
+    artist: "Harris",
     url: "Oh-Shanthi-Shanthi-MassTamilan.com.mp3",
     coverUrl: "https://example.com/cover1.jpg",
   },
   {
     title: "Oh-Sukumari",
-    artist: "Harrish",
+    artist: "Harris",
     url: "Oh-Sukumari.mp3",
     coverUrl: "https://example.com/cover1.jpg",
   },
   {
     title: "Okka Nimisham",
-    artist: "Harrish",
+    artist: "Harris",
     url: "Okka Nimisham.mp3",
     coverUrl: "https://example.com/cover1.jpg",
   },
   {
     title: "Oorellam-Unnai-Kandu",
-    artist: "Harrish",
+    artist: "Harris",
     url: "Oorellam-Unnai-Kandu.mp3",
     coverUrl: "https://example.com/cover1.jpg",
   },
   {
     title: "Oru-Maalai",
-    artist: "Harrish",
+    artist: "Harris",
     url: "Oru-Maalai.mp3",
     coverUrl: "https://example.com/cover1.jpg",
   },
 
   {
     title: "Pachai-Uduthiya-Kaadu",
-    artist: "Harrish",
+    artist: "Harris",
     url: "Pachai-Uduthiya-Kaadu.mp3",
     coverUrl: "https://example.com/cover1.jpg",
   },
   {
     title: "Pachigalam-Paravaigalam",
-    artist: "Harrish",
+    artist: "Harris",
     url: "Pachigalam-Paravaigalam-MassTamilan.fm.mp3",
     coverUrl: "https://example.com/cover1.jpg",
   },
   {
     title: "Pattha-Muthal",
-    artist: "Harrish",
+    artist: "Harris",
     url: "Partha-Muthal.mp3",
     coverUrl: "https://example.com/cover1.jpg",
   },
   {
     title: "Pilla Puli",
-    artist: "Harrish",
+    artist: "Harris",
     url: "Pilla Puli.mp3",
     coverUrl: "https://example.com/cover1.jpg",
   },
   {
     title: "Poi-Varavaa",
-    artist: "Harrish",
+    artist: "Harris",
     url: "Poi-Varavaa-MassTamilan.fm.mp3",
     coverUrl: "https://example.com/cover1.jpg",
   },
   {
     title: "Polladha-Boomi",
-    artist: "Harrish",
+    artist: "Harris",
     url: "Polladha-Boomi-MassTamilan.org.mp3",
     coverUrl: "https://example.com/cover1.jpg",
   },
   {
     title: "Pooppol-poopol",
-    artist: "Harrish",
+    artist: "Harris",
     url: "Pooppol-Poopol.mp3",
     coverUrl: "https://example.com/cover1.jpg",
   },
   {
     title: "Por Veeran",
-    artist: "Harrish",
+    artist: "Harris",
     url: "Por Veeran (Azadi).mp3",
     coverUrl: "https://example.com/cover1.jpg",
   },
   {
     title: "Poraen Naa Poraen",
-    artist: "Harrish",
+    artist: "Harris",
     url: "Poraen Naa Poraen.mp3",
     coverUrl: "https://example.com/cover1.jpg",
   },
   {
     title: "Porkkalam",
-    artist: "Harrish",
+    artist: "Harris",
     url: "Porkkalam-Tamil-Rap.mp3",
     coverUrl: "https://example.com/cover1.jpg",
   },
   {
     title: "pudichirukku",
-    artist: "Harrish",
+    artist: "Harris",
     url: "Pudichirukku.mp3",
     coverUrl: "https://example.com/cover1.jpg",
   },
   {
     title: "Pullinangal",
-    artist: "Harrish",
+    artist: "Harris",
     url: "Pullinangal-MassTamilan.com.mp3",
     coverUrl: "https://example.com/cover1.jpg",
   },
   {
     title: "Raajali-Nee-Gaali",
-    artist: "Harrish",
+    artist: "Harris",
     url: "Raajali-Nee-Gaali-MassTamilan.com.mp3",
     coverUrl: "https://example.com/cover1.jpg",
   },
   {
     title: "Oru-Vaanam",
-    artist: "Harrish",
+    artist: "Harris",
     url: "Oru-Vaanam-MassTamilan.org.mp3",
     coverUrl: "https://example.com/cover1.jpg",
   },
   {
     title: "Oru-Vazhi",
-    artist: "Harrish",
+    artist: "Harris",
     url: "Oru-Vazhi-Pathai-MassTamilan.com.mp3",
     coverUrl: "https://example.com/cover1.jpg",
   },
   {
     title: "Otha-Sollala",
-    artist: "Harrish",
+    artist: "Harris",
     url: "Otha-Sollaala.mp3",
     coverUrl: "https://example.com/cover1.jpg",
   },
   {
     title: "Othayilae",
-    artist: "Harrish",
+    artist: "Harris",
     url: "Othayilae.mp3",
     coverUrl: "https://example.com/cover1.jpg",
   },
   {
     title: "Ragasiyam-",
-    artist: "Harrish",
+    artist: "Harris",
     url: "Ragasiyam-MassTamilan.com.mp3",
     coverUrl: "https://example.com/cover1.jpg",
   },
   {
     title: "Rahatulla",
-    artist: "Harrish",
+    artist: "Harris",
     url: "Rahatulla.mp3",
     coverUrl: "https://example.com/cover1.jpg",
   },
   {
     title: "Rangola",
-    artist: "Harrish",
+    artist: "Harris",
     url: "Rangola.mp3",
     coverUrl: "https://example.com/cover1.jpg",
   },
   {
     title: "Rasaali",
-    artist: "Harrish",
+    artist: "Harris",
     url: "Rasaali.mp3",
     coverUrl: "https://example.com/cover1.jpg",
   },
 
   {
     title: "Sakhiyae",
-    artist: "Harrish",
+    artist: "Harris",
     url: "Sakhiyae.mp3",
     coverUrl: "https://example.com/cover1.jpg",
   },
   {
-    title: "Sawadeeka",
-    artist: "Aniruth",
-    url: "Sawadeeka-MassTamilan.dev.mp3",
-    coverUrl: "https://example.com/cover1.jpg",
-  },
-  {
     title: "Showkali",
-    artist: "Harrish",
+    artist: "Harris",
     url: "Showkali.mp3",
     coverUrl: "https://example.com/cover1.jpg",
   },
   {
     title: "Silu-Silu",
-    artist: "Harrish",
+    artist: "Harris",
     url: "Silu-Silu.mp3",
     coverUrl: "https://example.com/cover1.jpg",
   },
   {
     title: "Sithramaina",
-    artist: "Harrish",
+    artist: "Harris",
     url: "Sithramaina Bhoomi.mp3",
     coverUrl: "https://example.com/cover1.jpg",
   },
   {
     title: "Sleeping-Beauty",
-    artist: "Harrish",
+    artist: "Harris",
     url: "Sleeping-Beauty-MassTamilan.dev.mp3",
     coverUrl: "https://example.com/cover1.jpg",
   },
   {
     title: "Suttum-Vizhi",
-    artist: "Harrish",
+    artist: "Harris",
     url: "Suttum-Vizhi.mp3",
     coverUrl: "https://example.com/cover1.jpg",
   },
 
   {
     title: "that-Is-Mahalaksmi",
-    artist: "Harrish",
+    artist: "Harris",
     url: "That-Is-Mahalakshmi-MassTamilan.org.mp3",
     coverUrl: "https://example.com/cover1.jpg",
   },
   {
     title: "The-Blood-Bath",
-    artist: "Harrish",
+    artist: "Harris",
     url: "The-Blood-Bath-MassTamilan.org.mp3",
     coverUrl: "https://example.com/cover1.jpg",
   },
   {
     title: "The-raise-of-Damo",
-    artist: "Harrish",
+    artist: "Harris",
     url: "The-Rise-of-Damo.mp3",
     coverUrl: "https://example.com/cover1.jpg",
   },
   {
     title: "Thee-Illai",
-    artist: "Harrish",
+    artist: "Harris",
     url: "Thee-Illai.mp3",
     coverUrl: "https://example.com/cover1.jpg",
   },
   {
     title: "Thiru-Thiru-Ganantha",
-    artist: "Harrish",
+    artist: "Harris",
     url: "Thiru-Thiru-Gananatha-MassTamilan.org.mp3",
     coverUrl: "https://example.com/cover1.jpg",
   },
   {
     title: "Thirunelveli-Alvada",
-    artist: "Harrish",
+    artist: "Harris",
     url: "Thirunelveli-Alvada.mp3",
     coverUrl: "https://example.com/cover1.jpg",
   },
   {
     title: "Thotta-Power",
-    artist: "Harrish",
+    artist: "Harris",
     url: "Thotta-Power.mp3",
     coverUrl: "https://example.com/cover1.jpg",
   },
   {
     title: "thalaivane",
-    artist: "Harrish",
+    artist: "Harris",
     url: "Thalaivane-MassTamilan.dev.mp3",
     coverUrl: "https://example.com/cover1.jpg",
   },
   {
     title: "Thalavali",
-    artist: "Harrish",
+    artist: "Harris",
     url: "Thalavali-MassTamilan.dev.mp3",
     coverUrl: "https://example.com/cover1.jpg",
   },
   {
     title: "Unakkena-Venum-Sollu",
-    artist: "Harrish",
+    artist: "Harris",
     url: "Unakkenna-Venum-Sollu.mp3",
     coverUrl: "https://example.com/cover1.jpg",
   },
   {
     title: "unakkul-Naane",
-    artist: "Harrish",
+    artist: "Harris",
     url: "Unakkul-Naane-MassTamilan.dev.mp3",
     coverUrl: "https://example.com/cover1.jpg",
   },
   {
     title: "Unnaale-Unnaale",
-    artist: "Harrish",
+    artist: "Harris",
     url: "Unnaale-Unnaale.mp3",
     coverUrl: "https://example.com/cover1.jpg",
   },
   {
     title: "Uyirey",
-    artist: "uyiey",
+    artist: "Harris",
     url: "Uyirey.mp3",
     coverUrl: "https://example.com/cover1.jpg",
   },
   {
     title: "Vaane Vaane",
-    artist: "Harrish",
+    artist: "Harris",
     url: "Vaane Vaane.mp3",
     coverUrl: "https://example.com/cover1.jpg",
   },
 
   {
     title: "Vaseegara",
-    artist: "Harrish",
+    artist: "Harris",
     url: "Vaseegara.mp3",
     coverUrl: "https://example.com/cover1.jpg",
   },
   {
     title: "Veeramulla",
-    artist: "Harrish",
+    artist: "Harris",
     url: "Veeramulla.mp3",
     coverUrl: "https://example.com/cover1.jpg",
   },
   {
     title: "Venmathiye",
-    artist: "Harrish",
+    artist: "Harris",
     url: "Venmathiye.mp3",
     coverUrl: "https://example.com/cover1.jpg",
   },
   {
     title: "Veenilave",
-    artist: "Harrish",
+    artist: "Harris",
     url: "Vennilave-MassTamilan.fm.mp3",
     coverUrl: "https://example.com/cover1.jpg",
   },
   {
     title: "Vaarayo-Varaayo",
-    artist: "Harrish",
+    artist: "Harris",
     url: "Vaarayo-Vaarayo-MassTamilan.dev.mp3",
     coverUrl: "https://example.com/cover1.jpg",
   },
   {
     title: "Vandhuttaanda-kaalai",
-    artist: "Harrish",
+    artist: "Harris",
     url: "Vandhuttaanda-Kaalai.mp3",
     coverUrl: "https://example.com/cover1.jpg",
   },
   {
     title: "Vennilavu Saaral",
-    artist: "Harrish",
+    artist: "Harris",
     url: "Vennilavu Saaral.mp3",
     coverUrl: "https://example.com/cover1.jpg",
   },
   {
     title: "Veppamaram",
-    artist: "Harrish",
+    artist: "Harris",
     url: "Veppamaram.mp3",
     coverUrl: "https://example.com/cover1.jpg",
   },
   {
     title: "Verenna-Verenna",
-    artist: "Harrish",
+    artist: "Harris",
     url: "Verenna-Verenna.mp3",
     coverUrl: "https://example.com/cover1.jpg",
   },
   {
     title: "Vilaiyaadu-Vilayaadu",
-    artist: "Harrish",
+    artist: "Harris",
     url: "Vilaiyaadu-Vilaiyaadu.mp3",
     coverUrl: "https://example.com/cover1.jpg",
   },
 
   {
     title: "Yamma-Yamma",
-    artist: "Harrish",
+    artist: "Harris",
     url: "Yamma-Yamma.mp3",
     coverUrl: "https://example.com/cover1.jpg",
   },
   {
     title: "Yathe-yathe",
-    artist: "Harrish",
+    artist: "Harris",
     url: "Yathe-Yathe.mp3",
     coverUrl: "https://example.com/cover1.jpg",
   },
   {
     title: "Yeanadi-Yeanadi",
-    artist: "Harrish",
+    artist: "Harris",
     url: "Yeanadi-Yeanadi-MassTamilan.org.mp3",
     coverUrl: "https://example.com/cover1.jpg",
   },
   {
     title: "Yellae-lama",
-    artist: "Harrish",
+    artist: "Harris",
     url: "Yellae-Lama.mp3",
     coverUrl: "https://example.com/cover1.jpg",
   },
   {
     title: "Yen-Minukki",
-    artist: "Harrish",
+    artist: "Harris",
     url: "Yen-Minukki-MassTamilan.org.mp3",
     coverUrl: "https://example.com/cover1.jpg",
   },
   {
     title: "Yendhan-Kan-Mune",
-    artist: "Harrish",
+    artist: "Harris",
     url: "Yendhan-Kan-Munne-MassTamilan.fm.mp3",
     coverUrl: "https://example.com/cover1.jpg",
   },
   {
     title: "Yethi-Yethi",
-    artist: "Harrish",
+    artist: "Harris",
     url: "Yethi-Yethi-MassTamilan.com.mp3",
     coverUrl: "https://example.com/cover1.jpg",
   },
   {
     title: "Vizhiyil-Un-Vizhiyil",
-    artist: "Harrish",
+    artist: "Harris",
     url: "Vizhiyil-Un-Vizhiyil.mp3",
     coverUrl: "https://example.com/cover1.jpg",
   },
   {
     title: "Warriors-English",
-    artist: "Harrish",
+    artist: "Harris",
     url: "Warriors-English-Rap.mp3",
     coverUrl: "https://example.com/cover1.jpg",
   },
   {
     title: "X-Machi",
-    artist: "Harrish",
+    artist: "Harris",
     url: "X-Machi.mp3",
     coverUrl: "https://example.com/cover1.jpg",
   }
@@ -1112,6 +1106,8 @@ const SONGS = [
 
 let currentSongIndex = 0;
 let isPlaying = false;
+let isSearchActive = false;
+let searchResults = [];
 const audio = new Audio();
 const trackList = document.getElementById('trackList');
 const searchInput = document.getElementById('search');
@@ -1143,6 +1139,7 @@ function sendMetadataUpdate(song) {
     window.AppInventor.setWebViewString(`MetadataUpdate:${JSON.stringify(metadata)}`);
   }
 }
+
 const loadSong = (index) => {
   const song = SONGS[index];
   title.textContent = song.title;
@@ -1187,7 +1184,7 @@ const loadSong = (index) => {
 const playSong = () => {
   isPlaying = true;
   audio.play();
-  playPauseButton.textContent = '⏸️';
+  playPauseButton.textContent = '⏸';
 };
 
 // Pause the current song
@@ -1204,15 +1201,25 @@ const togglePlayPause = () => {
 
 // Play the next song
 const playNextSong = () => {
-  currentSongIndex = (currentSongIndex + 1) % SONGS.length;
-  loadSong(currentSongIndex);
+  if (isSearchActive && searchResults.length > 0) {
+    currentSongIndex = (currentSongIndex + 1) % searchResults.length;
+    loadSong(SONGS.indexOf(searchResults[currentSongIndex]));
+  } else {
+    currentSongIndex = (currentSongIndex + 1) % SONGS.length;
+    loadSong(currentSongIndex);
+  }
   playSong();
 };
 
 // Play the previous song
 const playPrevSong = () => {
-  currentSongIndex = (currentSongIndex - 1 + SONGS.length) % SONGS.length;
-  loadSong(currentSongIndex);
+  if (isSearchActive && searchResults.length > 0) {
+    currentSongIndex = (currentSongIndex - 1 + searchResults.length) % searchResults.length;
+    loadSong(SONGS.indexOf(searchResults[currentSongIndex]));
+  } else {
+    currentSongIndex = (currentSongIndex - 1 + SONGS.length) % SONGS.length;
+    loadSong(currentSongIndex);
+  }
   playSong();
 };
 
@@ -1252,23 +1259,77 @@ const debounce = (func, delay) => {
 // Filter the song list based on the search input
 const filterSongs = debounce(() => {
   const query = searchInput.value.toLowerCase();
-  const filteredSongs = SONGS.filter((song) => song.title.toLowerCase().includes(query));
-  renderSongList(filteredSongs);
+  searchResults = SONGS.filter((song) => song.title.toLowerCase().includes(query));
+  isSearchActive = query.length > 0;
+  renderSongList(searchResults);
 }, 300);
 
-// Render the song list in the UI
 const renderSongList = (songs) => {
-  trackList.innerHTML = '';
-  songs.forEach((song) => {
+  trackList.innerHTML = ''; // Clear the existing list
+  songs.forEach((song, index) => {
     const li = document.createElement('li');
-    li.textContent = `${song.title} - ${song.artist}`;
     li.classList.add('track');
+    
+    // Create an image element for the cover
+    const img = document.createElement('img');
+    img.src = "default-cover.jpg"; // Set default initially
+    img.alt = song.title;
+    img.classList.add('track-cover'); // Add CSS class for styling
+    
+    // Check if cover is already stored in localStorage
+    const storedCover = localStorage.getItem(`cover_${song.url}`);
+    if (storedCover) {
+      img.src = storedCover;
+    } else {
+      // Try to extract cover image from MP3 metadata
+      fetch(song.url)
+        .then(response => response.blob())
+        .then(blob => {
+          jsmediatags.read(blob, {
+            onSuccess: function (tag) {
+              const picture = tag.tags.picture;
+              if (picture) {
+                let base64String = "";
+                for (let i = 0; i < picture.data.length; i++) {
+                  base64String += String.fromCharCode(picture.data[i]);
+                }
+                const base64 = btoa(base64String);
+                const coverSrc = `data:${picture.format};base64,${base64}`;
+                img.src = coverSrc;
+                localStorage.setItem(`cover_${song.url}`, coverSrc); // Store in localStorage
+              }
+            },
+            onError: function (error) {
+              console.error("Error reading cover art:", error);
+            }
+          });
+        })
+        .catch(error => console.error("Error fetching MP3 file:", error));
+    }
+    
+    // Create a div for track info
+    const trackInfo = document.createElement('div');
+    trackInfo.classList.add('track-info');
+    
+    // Create a div for the title
+    const trackTitle = document.createElement('div');
+    trackTitle.classList.add('track-title');
+    trackTitle.textContent = song.title; 
+    trackInfo.appendChild(trackTitle);
+   
+    li.appendChild(img);
+    li.appendChild(trackInfo);
+    
     li.addEventListener('click', () => {
-      const songIndex = SONGS.findIndex((s) => s.title === song.title);
-      currentSongIndex = songIndex;
+      if (isSearchActive) {
+        currentSongIndex = SONGS.indexOf(song);
+      } else {
+        currentSongIndex = index;
+      }
       loadSong(currentSongIndex);
       playSong();
     });
+    
     trackList.appendChild(li);
   });
 };
@@ -1340,6 +1401,19 @@ const updateMediaSession = (song) => {
 document.addEventListener("visibilitychange", function () {
   if (document.hidden) {
     playSong();
+  }
+});
+
+// Event listeners for audio and controls
+audio.addEventListener('ended', playNextSong);
+audio.addEventListener('timeupdate', updateProgress);
+searchInput.addEventListener('input', () => {
+  if (searchInput.value === '') {
+    isSearchActive = false;
+    searchResults = [];
+    renderSongList(SONGS);
+  } else {
+    filterSongs();
   }
 });
 
