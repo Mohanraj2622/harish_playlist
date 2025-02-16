@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FreeLoop Player</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="Logo.png" type="image/png">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<body>
+  <div class="main-container">
+    <div class="player-container">
+      <nav class="head_container">
+        <h3 class="header">FreeLoop</h3>
+        <h4 class="Welcome">Harish Playlist</h4>
+      </nav>
+      <div class="spotify-app">
+        <div class="container">
+          <div class="search-bar">
+            <input id="search" type="text" placeholder="Search for a song...">
+          </div>
+          <ul id="trackList" class="track-list">
+            <!-- Track items will be dynamically added here -->
+            <li class="track">
+              <img src="/api/placeholder/50/50" alt="Track Cover">
+              <div class="track-info">
+                <div class="track-title">Track</div>
+                <div class="track-artist">Artist</div>
+              </div>
+            </li>
+          </ul>
+          <!--player control-->
+          <div class="player">
+            <img id="cover" src="/api/placeholder/50/50" alt="Album Cover">
+            <h3 id="title">Select a Song</h3>
+            <p id="artist">Artist</p>
+            <div class="progress-bar">
+              <span id="currentTime">0:00</span>
+              <input id="progress" type="range" min="0" max="100" value="0">
+              <span id="duration">0:00</span>
+            </div>
+            <div class="player-controls">
+              <button id="prev" aria-label="Previous Song">⏮️</button>
+              <button id="playPause" aria-label="Play/Pause">▶️</button>
+              <button id="next" aria-label="Next Song">⏭️</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bottom-menu">
+      <a href="#" class="menu-item">
+        <i class="fas fa-home"></i>
+        <span>Home</span>
+      </a>
+      <a href="#search" class="menu-item">
+        <i class="fas fa-search"></i>
+        <span>Search</span>
+      </a>
+      <a href="feedback.html" class="menu-item album-btn">
+        <i class="fas fa-comment-alt"></i>
+        <span>Feedback</span>
+      </a>
+    </div>
+    <!-- jsmediatags Library -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jsmediatags/3.9.5/jsmediatags.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jsmediatags@3.9.5/dist/jsmediatags.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
