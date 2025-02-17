@@ -1269,13 +1269,12 @@ const renderSongList = (songs) => {
   songs.forEach((song, index) => {
     const li = document.createElement('li');
     li.classList.add('track');
-    
+
     // Create an image element for the cover
     const img = document.createElement('img');
     img.src = "default-cover.jpg"; // Set default initially
     img.alt = song.title;
     img.classList.add('track-cover'); // Add CSS class for styling
-    
 
     // Array of random cover images (URLs or Base64 data)
 const defaultCovers = [
@@ -1292,20 +1291,20 @@ function getRandomCover() {
 
 // Set a random cover icon immediately
 img.src = getRandomCover();
- 
+
     // Create a div for track info
     const trackInfo = document.createElement('div');
     trackInfo.classList.add('track-info');
-    
+
     // Create a div for the title
     const trackTitle = document.createElement('div');
     trackTitle.classList.add('track-title');
-    trackTitle.textContent = song.title; 
+    trackTitle.textContent = song.title;
     trackInfo.appendChild(trackTitle);
-   
+
     li.appendChild(img);
     li.appendChild(trackInfo);
-    
+
     li.addEventListener('click', () => {
       if (isSearchActive) {
         currentSongIndex = SONGS.indexOf(song);
@@ -1315,7 +1314,7 @@ img.src = getRandomCover();
       loadSong(currentSongIndex);
       playSong();
     });
-    
+
     trackList.appendChild(li);
   });
 };
