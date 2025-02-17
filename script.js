@@ -1276,30 +1276,23 @@ const renderSongList = (songs) => {
     img.alt = song.title;
     img.classList.add('track-cover'); // Add CSS class for styling
     
-// Try to extract cover image from MP3 metadata
-fetch(song.url)
-  .then(response => response.blob())
-  .then(blob => {
-    jsmediatags.read(blob, {
-      onSuccess: function (tag) {
-        const picture = tag.tags.picture;
-        if (picture) {
-          let base64String = "";
-          for (let i = 0; i < picture.data.length; i++) {
-            base64String += String.fromCharCode(picture.data[i]);
-          }
-          const base64 = btoa(base64String);
-          img.src = `data:${picture.format};base64,${base64}`;
-        }
-      },
-      onError: function (error) {
-        console.error("Error reading cover art:", error);
-      }
-    });
-  })
-  .catch(error => console.error("Error fetching MP3 file:", error));
 
-    
+    // Array of random cover images (URLs or Base64 data)
+const defaultCovers = [
+  "cover_harris_1.png",
+  "cover_harris-2.png",
+  "cover_harris-3.png",
+  "cover_harris-4.png"
+];
+
+// Function to get a random cover image
+function getRandomCover() {
+  return defaultCovers[Math.floor(Math.random() * defaultCovers.length)];
+}
+
+// Set a random cover icon immediately
+img.src = getRandomCover();
+ 
     // Create a div for track info
     const trackInfo = document.createElement('div');
     trackInfo.classList.add('track-info');
