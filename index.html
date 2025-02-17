@@ -73,22 +73,13 @@
       <div id="offlineMessage" style="display: none; background: red; color: white; padding: 10px; text-align: center;">
   No Internet Connection! Please reconnect.
 </div>
-
-<script>
-  function updateOnlineStatus() {
-    let offlineMessage = document.getElementById("offlineMessage");
-    if (!navigator.onLine) {
-      offlineMessage.style.display = "block";
-    } else {
-      offlineMessage.style.display = "none";
-    }
-  }
-
-  // Run on load and listen for changes
-  window.addEventListener("load", updateOnlineStatus);
-  window.addEventListener("offline", updateOnlineStatus);
-  window.addEventListener("online", updateOnlineStatus);
-</script>
+    <script>
+        if ("serviceWorker" in navigator) {
+            navigator.serviceWorker.register("./sw.js")
+                .then(() => console.log("Service Worker Registered"))
+                .catch((error) => console.log("Service Worker Registration Failed:", error));
+        }
+    </script>
 
       <!-- jsmediatags Library -->
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jsmediatags/3.9.5/jsmediatags.min.js"></script>
