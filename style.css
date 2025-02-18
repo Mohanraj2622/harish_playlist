@@ -246,77 +246,29 @@ body {
 
 /* Artist name styling */
 .modified-player .player #artist {
-  font-size: 14px;
+  font-size: 12px;
   color: var(--text-gray);
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
-
 /* Progress bar container */
 .progress-bar {
   display: flex;
   align-items: center;
   gap: 10px;
-  position: relative;
+  position: fixed;
+  margin-left: 20%;
+  
 }
-
-/* Equalizer Animation Above Progress Bar */
-.equalizer {
-  display: flex;
-  gap: 3px;
-  width: 40px;
-  height: 20px;
-  position: absolute;
-  top: -25px;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.equalizer div {
-  width: 4px;
-  background: linear-gradient(to top, #ff0, #0ff, #f0f);
-  border-radius: 3px;
-  animation: equalizer 1s infinite ease-in-out alternate;
-}
-
-.equalizer div:nth-child(1) { animation-delay: 0s; }
-.equalizer div:nth-child(2) { animation-delay: 0.2s; }
-.equalizer div:nth-child(3) { animation-delay: 0.4s; }
-.equalizer div:nth-child(4) { animation-delay: 0.1s; }
-.equalizer div:nth-child(5) { animation-delay: 0.3s; }
-
-@keyframes equalizer {
-  0% { height: 5px; }
-  50% { height: 20px; }
-  100% { height: 8px; }
-}
-
-/* Progress Bar */
-#progress {
-  width: 100%;
-  height: 6px;
-  background: #444;
-  border-radius: 5px;
-  outline: none;
-}
-
-#progress::-webkit-slider-thumb {
-  width: 10px;
-  height: 10px;
-  background: #ff0;
-  border-radius: 50%;
-  cursor: pointer;
-}
-
 
 /* Player button specific styles */
 .modified-player .player-controls {
   display: flex;
   align-items: center;
-  gap: 20px; /* Increased gap between buttons */
-  margin-left: auto;
+  gap: 40px; /* Increased gap between buttons */
+  margin-left: 10px;
   padding: 0 12px;
   height: 100%;
 }
@@ -355,7 +307,6 @@ body {
   transform: scale(0.95);
 }
 
-
 /* Next/Previous buttons */
 .modified-player .player-controls button.next,
 .modified-player .player-controls button.prev {
@@ -373,11 +324,13 @@ body {
     width: 32px;
     height: 32px;
     font-size: 20px;
+    
   }
 
   .modified-player .player-controls button.play-pause {
     width: 36px;
     height: 36px;
+    
   }
 }
 
@@ -391,6 +344,7 @@ body {
     width: 28px;
     height: 28px;
     font-size: 18px;
+    
   }
 
   .modified-player .player-controls button.play-pause {
@@ -398,6 +352,7 @@ body {
     height: 32px;
   }
 }
+
 .spotify-app {
   display: flex;
   flex-direction: column;
@@ -450,41 +405,285 @@ body {
   color: var(--accent-green);
 }
 
-
-
-.modified-player.fullscreen-active {
+.fullscreen-player {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
-  height: 100vh;
-  background: black;
+  width: 100%;
+  height: 60%;
+  background: rgb(156, 152, 152);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  z-index: 9999;
+  z-index: 1000;
   padding: 20px;
 }
 
-.modified-player.fullscreen-active img {
-  width: 80%;
-  max-width: 300px;
-  border-radius: 20px;
+/* Base Variables - Making it easy to maintain consistent theme colors */
+:root {
+  --primary-color: #0e6dfc;
+  --primary-rgb: 252, 14, 14;
+  --white: #fff;
+  --shadow-light: rgba(0, 0, 0, 0.1);
+  --shadow-medium: rgba(0, 0, 0, 0.2);
+  --transition-speed: 0.3s;
+  
+  /* Button Sizes */
+  --btn-size-desktop: 32px;
+  --btn-size-tablet: 30px;
+  --btn-size-mobile: 26px;
+  --btn-size-small: 22px;
 }
 
-.modified-player.fullscreen-active #title {
-  font-size: 24px;
-  color: white;
-  margin-top: 10px;
+/* Close Button Base Styles */
+.close-btn {
+  /* Position */
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 999;
+  
+  /* Appearance */
+  background-color: var(--white);
+  border: 2px solid var(--primary-color);
+  color: var(--primary-color);
+  border-radius: 50%;
+  
+  /* Dimensions */
+  font-size: var(--btn-size-tablet);
+  padding: 10px;
+  width: 50px;
+  height: 50px;
+  
+  /* Display */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  /* Interaction */
+  cursor: pointer;
+  
+  /* Effects */
+  box-shadow: 0 4px 6px var(--shadow-light);
+  transition: all var(--transition-speed) cubic-bezier(0.4, 0, 0.2, 1);
+  
+  /* Ensure smooth rendering */
+  backface-visibility: hidden;
+  transform: translateZ(0);
+  -webkit-font-smoothing: antialiased;
 }
 
-.modified-player.fullscreen-active #artist {
-  font-size: 18px;
-  color: gray;
+/* Interactive States */
+.close-btn:hover {
+  background-color: var(--primary-color);
+  color: var(--white);
+  transform: scale(1.05);
+  box-shadow: 0 8px 12px var(--shadow-medium);
 }
 
-.modified-player.fullscreen-active .controls {
-  margin-top: 20px;
+.close-btn:focus {
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(var(--primary-rgb), 0.3);
 }
 
+.close-btn:active {
+  transform: scale(0.95);
+  box-shadow: 0 2px 4px var(--shadow-light);
+}
+
+/* Click Animation */
+@keyframes buttonClick {
+  0%, 100% {
+    box-shadow: 0 4px 6px var(--shadow-light);
+  }
+  50% {
+    box-shadow: 0 6px 8px rgba(var(--primary-rgb), 0.4);
+  }
+}
+
+/* Responsive Design - Mobile First Approach */
+@media (max-width: 480px) {
+  .close-btn {
+    font-size: var(--btn-size-small);
+    padding: 6px;
+    top: 10px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .close-btn {
+    font-size: var(--btn-size-mobile);
+    padding: 8px;
+    top: 15px;
+    right: 15px;
+    width: 45px;
+    height: 45px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .close-btn {
+    font-size: var(--btn-size-desktop);
+    padding: 12px;
+    top: 25px;
+    right: 25px;
+    width: 55px;
+    height: 55px;
+  }
+  
+  .close-btn:hover {
+    transform: scale(1.1);
+  }
+}
+
+/* Reduce Motion - Accessibility */
+@media (prefers-reduced-motion: reduce) {
+  .close-btn {
+    transition: none;
+  }
+  
+  .close-btn:hover {
+    transform: none;
+  }
+}
+
+.song-info {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+#fullscreen-cover {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+
+/* Fullscreen button styling with advanced effects */
+.fullscreen-btn {
+  background: linear-gradient(135deg, #007bff, #00c6ff); /* Gradient background for a modern look */
+  color: white; /* White text/icon */
+  font-size: 24px; /* Larger font size for the icon */
+  padding: 15px 20px; /* Spacious padding for a nice button size */
+  border: none; /* Remove default border */
+  border-radius: 50%; /* Circular button */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: all 0.4s ease-out; /* Smooth transition for hover and focus */
+  display: flex; /* Flexbox to center the icon */
+  align-items: center; /* Vertically center the icon */
+  justify-content: center; /* Horizontally center the icon */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+  position: absolute; /* Position freely */
+  top: 20px; /* Position near the top */
+  right: 20px; /* Position near the right */
+  z-index: 10; /* Ensure it stays on top */
+  width: 60px; /* Width of the button */
+  height: 60px; /* Height of the button */
+}
+
+/* Icon style */
+.fullscreen-btn i {
+  transition: transform 0.3s ease; /* Smooth rotation on hover */
+  font-size: 28px; /* Slightly larger icon */
+}
+
+/* Hover effect for the fullscreen button */
+.fullscreen-btn:hover {
+  background: linear-gradient(135deg, #00c6ff, #007bff); /* Reverse gradient on hover */
+  transform: scale(1.1); /* Slightly enlarge the button */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25); /* Stronger shadow on hover */
+}
+
+/* Icon rotation on hover */
+.fullscreen-btn:hover i {
+  transform: rotate(180deg); /* Rotate the icon when hovered */
+}
+
+/* Focus effect for accessibility */
+.fullscreen-btn:focus {
+  outline: none; /* Remove default focus outline */
+  box-shadow: 0 0 0 4px rgba(0, 123, 255, 0.5); /* Custom focus glow */
+  border-radius: 50%; /* Maintain the circular shape */
+}
+
+/* Add a glowing animation for the button */
+@keyframes glowAnimation {
+  0% {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  }
+  50% {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3), 0 0 10px rgba(0, 200, 255, 0.5); /* Glowing effect */
+  }
+  100% {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  }
+}
+
+/* Activate the glow animation */
+.fullscreen-btn:active {
+  animation: glowAnimation 1s ease-in-out infinite; /* Continuous glow when clicked */
+}
+
+/* Responsive Design */
+
+/* For smaller screens (Mobile devices) */
+@media (max-width: 768px) {
+  .fullscreen-btn {
+    width: 50px; /* Smaller button size */
+    height: 50px; /* Smaller button size */
+    padding: 10px; /* Less padding */
+    font-size: 20px; /* Smaller icon size */
+  }
+  .fullscreen-btn i {
+    font-size: 24px; /* Smaller icon size */
+  }
+  .fullscreen-btn:hover {
+    transform: scale(1.05); /* Slightly smaller scale on hover */
+  }
+  .fullscreen-btn:active {
+    animation: glowAnimation 1s ease-in-out infinite; /* Continuous glow when clicked */
+  }
+}
+
+/* For very small screens (Portrait mobile or extra small devices) */
+@media (max-width: 480px) {
+  .fullscreen-btn {
+    width: 45px; /* Further smaller button */
+    height: 45px; /* Further smaller button */
+    font-size: 18px; /* Even smaller font size */
+  }
+  .fullscreen-btn i {
+    font-size: 22px; /* Even smaller icon */
+  }
+  .fullscreen-btn:hover {
+    transform: scale(1.05); /* Slightly smaller scale on hover */
+  }
+  .fullscreen-btn:active {
+    animation: glowAnimation 1s ease-in-out infinite; /* Continuous glow when clicked */
+  }
+}
+
+/* For large screens (Tablets and larger devices) */
+@media (min-width: 1024px) {
+  .fullscreen-btn {
+    width: 70px; /* Larger button size */
+    height: 70px; /* Larger button size */
+    padding: 20px; /* More padding */
+    font-size: 28px; /* Larger icon size */
+  }
+  .fullscreen-btn i {
+    font-size: 32px; /* Larger icon size */
+  }
+  .fullscreen-btn:hover {
+    transform: scale(1.15); /* Larger scale on hover for larger screens */
+  }
+  .fullscreen-btn:active {
+    animation: glowAnimation 1s ease-in-out infinite; /* Continuous glow when clicked */
+  }
+}
