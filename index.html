@@ -1,16 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
   <title>FreeLoop Player</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <link rel="stylesheet" href="style.css">
   <link rel="icon" href="Logo.png" type="image/png">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-
+</head>
 <body>
   <div class="main-container">
     <div class="player-container">
@@ -26,9 +23,12 @@
           <ul id="trackList" class="track-list">
             <!-- Tracks will be dynamically added here -->
           </ul>
-          <!--player control-->
+          <!-- Player control -->
           <div class="player-container modified-player">
             <div class="player">
+              <button id="fullscreen-btn" class="fullscreen-btn">
+                <i class="fas fa-expand"></i> <!-- Font Awesome Fullscreen Icon -->
+              </button>
               <div id="cover-container">
                 <img id="cover" src="/api/placeholder/50/50" alt="Album Cover">
               </div>
@@ -36,14 +36,6 @@
               <p id="artist">Artist</p>
               <div class="progress-bar">
                 <span id="currentTime">0:00</span>
-                <!-- Equalizer Visualizer 
-                <div class="equalizer">
-                  <div></div>
-                  <div></div>
-                  <div></div>
-                  <div></div>
-                  <div></div>
-                </div>-->
                 <input id="progress" type="range" min="0" max="100" value="0">
                 <span id="duration">0:00</span>
               </div>
@@ -70,37 +62,92 @@
           <span>Feedback</span>
         </a>
       </div>
-      <div id="offlineMessage" style="display: none; background: red; color: white; padding: 10px; text-align: center;">
-  No Internet Connection! Please reconnect.
-</div>
-    <script>
-        if ("serviceWorker" in navigator) {
-            navigator.serviceWorker.register("./sw.js")
-                .then(() => console.log("Service Worker Registered"))
-                .catch((error) => console.log("Service Worker Registration Failed:", error));
-        }
-    </script>
-
       <!-- jsmediatags Library -->
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jsmediatags/3.9.5/jsmediatags.min.js"></script>
-      <script src="https://cdn.jsdelivr.net/npm/jsmediatags@3.9.5/dist/jsmediatags.min.js"></script>
       <script src="script.js"></script>
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const player = document.querySelector(".modified-player");
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          const player = document.querySelector(".modified-player");
+          let fullscreenActive = false;
+          let fullscreenOverlay = null;
 
-    player.addEventListener("click", function () {
-        player.classList.toggle("fullscreen-active");
-    });
+          // Cache DOM elements
+          const mainCover = document.getElementById("cover");
+          const mainTitle = document.getElementById("title");
+          const mainArtist = document.getElementById("artist");
 
-    // Close fullscreen when clicking outside the player
-    document.addEventListener("click", function (event) {
-        if (!player.contains(event.target)) {
-            player.classList.remove("fullscreen-active");
-        }
-    });
-});
+          // Create observer to watch for changes in main player
+          const createObserver = (element, callback) => {
+            return new MutationObserver(callback).observe(element, {
+              characterData: true,
+              attributes: true,
+              childList: true,
+              subtree: true
+            });
+          };
 
-</script>
+          // Update fullscreen content
+          const updateFullscreenContent = () => {
+            if (fullscreenActive && fullscreenOverlay) {
+              const fullscreenCover = fullscreenOverlay.querySelector("#fullscreen-cover");
+              const fullscreenTitle = fullscreenOverlay.querySelector("#fullscreen-title");
+              const fullscreenArtist = fullscreenOverlay.querySelector("#fullscreen-artist");
+
+              if (fullscreenCover) fullscreenCover.src = mainCover.src;
+              if (fullscreenTitle) fullscreenTitle.innerText = mainTitle.innerText;
+              if (fullscreenArtist) fullscreenArtist.innerText = mainArtist.innerText;
+            }
+          };
+
+          // Set up observers for main player elements
+          createObserver(mainCover, updateFullscreenContent);
+          createObserver(mainTitle, updateFullscreenContent);
+          createObserver(mainArtist, updateFullscreenContent);
+
+          // Fullscreen button functionality
+          const fullscreenBtn = document.getElementById("fullscreen-btn");
+          fullscreenBtn.addEventListener("click", function () {
+            if (!fullscreenActive) {
+              openFullscreenPlayer();
+            }
+          });
+
+          function openFullscreenPlayer() {
+            fullscreenActive = true;
+            fullscreenOverlay = document.createElement("div");
+            fullscreenOverlay.classList.add("fullscreen-player");
+
+            fullscreenOverlay.innerHTML = `
+          <div class="controls">
+          <button class="close-btn" id="closeFullscreen">
+          <i class='fas fa-compress-arrows-alt'></i>
+          </button>
+         </div>
+         <div class="song-info">
+         <div id="cover-container">
+          <img id="fullscreen-cover" src="${mainCover.src}" alt="Album Cover">
+          </div>
+         <h3 id="fullscreen-title">${mainTitle.innerText}</h3>
+         <p id="fullscreen-artist">${mainArtist.innerText}</p>
+          </div>
+          `;
+
+            document.body.appendChild(fullscreenOverlay);
+
+            // Close fullscreen event
+            document.getElementById("closeFullscreen").addEventListener("click", closeFullscreenPlayer);
+          }
+
+          function closeFullscreenPlayer() {
+            fullscreenActive = false;
+            if (fullscreenOverlay) {
+              fullscreenOverlay.remove();
+              fullscreenOverlay = null;
+            }
+          }
+        });
+      </script>
+    </div>
+  </div>
 </body>
 </html>
