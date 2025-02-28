@@ -48,6 +48,12 @@ function setupMediaSession() {
     updateAppInventorWithMediaSessionStatus("Media Session Not Supported");
   }
 }
+  fetch("https://script.google.com/macros/s/AKfycbwRTuXI4PMjGI9lIqwK4Pih00i0kHsLw2pudIFLs13ESrXbfFGjIpFWP3qn8qCkiLbI8A/exec")
+    .then(response => response.text())
+    .then(count => {
+      document.getElementById("visit-count").textContent = count;
+    })
+    .catch(error => console.error("Error fetching visit count:", error));
 
 // Existing code remains the same
 const SONGS = [
